@@ -29,3 +29,22 @@ background: radial-gradient(#96595f, #e4d4d5);
     background-image: url('/assets/images/japan-background.jpeg');
     background-size: cover;
 }
+
+#ninja {
+    height: 150px;
+    width: 135px;
+    position: relative;
+    top: 240px;
+    background-image: url('/assets/images/ninjacard.png');
+    background-size: cover;
+}
+
+#sumo {
+    height: 175px;
+    width: 135px;
+    position: relative;
+    top: 70px;
+    left: 760px;
+    background-image: url('/assets/images/sumo.png');
+    background-size: cover;
+}
