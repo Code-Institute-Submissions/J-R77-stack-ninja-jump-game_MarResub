@@ -37,6 +37,7 @@ background: radial-gradient(#96595f, #e4d4d5);
     top: 240px;
     background-image: url('/assets/images/ninjacard.png');
     background-size: cover;
+    animation: jump 0.5s;
 }
 
 #sumo {
@@ -47,4 +48,22 @@ background: radial-gradient(#96595f, #e4d4d5);
     left: 760px;
     background-image: url('/assets/images/sumo.png');
     background-size: cover;
+    animation: sumo 1.33s infinite;
 }
+
+@keyframes sumo {
+    0%{left: 760px;}
+    100%{left: -135px;}
+}
+
+.jump-ninja {
+    animation: jump 0.5s;
+}
+
+@keyframes jump {
+    0%{top: 240px;}
+    50%{top: 35px;}
+    75%{top: 35px;}
+    100%{top: 240px;}
+}
+
