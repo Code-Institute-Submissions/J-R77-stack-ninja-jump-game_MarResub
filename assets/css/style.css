@@ -1,0 +1,25 @@
+body {
+background: radial-gradient(#96595f, #e4d4d5);
+}
+
+.page-title {
+    color: #7c2f37;
+    font-family: 'Zen Tokyo Zoo', sans-serif;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+#score {
+    text-align: center;
+    color: #7c2f37;
+    font-family: 'Zen Tokyo Zoo', sans-serif;
+    font-size: 4rem;
+}
+
+.game-container {
+    width: 900px;
+    height: 400px;
+    border: 2px solid black;
+    margin: auto;
+}
