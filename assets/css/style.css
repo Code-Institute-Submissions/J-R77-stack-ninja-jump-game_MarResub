@@ -37,7 +37,6 @@ background: radial-gradient(#96595f, #e4d4d5);
     top: 240px;
     background-image: url('/assets/images/ninjacard.png');
     background-size: cover;
-    animation: jump 0.5s;
 }
 
 #sumo {
