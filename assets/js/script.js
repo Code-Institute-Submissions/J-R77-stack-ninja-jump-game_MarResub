@@ -6,8 +6,16 @@ const score = document.getElementById('score')
 /*Function to define what happens when the ninja jumps adding jump-animation to fuction from css*/
 
 function jump() {
-    ninja.classList('jump-animation');
+    ninja.classList.add('jump-ninja');
     setTimeout(() => {
-        ninja.classList.remove('jump-animation');
-    }, 500);
+        ninja.classList.remove('jump-ninja');
+    }, 1500);
 }
+
+/*Event listener to use the jump function on pressing a key and to stop user pressing jump until original jump is finished*/
+
+document.addEventListener('keypress', () => {
+    if (!ninja.classList.contains('jump-ninja')) {
+        jump();
+    }
+})
