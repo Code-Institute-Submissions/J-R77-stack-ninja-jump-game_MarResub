@@ -9,13 +9,35 @@ function jump() {
     ninja.classList.add('jump-ninja');
     setTimeout(() => {
         ninja.classList.remove('jump-ninja');
-    }, 1500);
+    }, 500);
 }
 
-/*Event listener to use the jump function on pressing a key and to stop user pressing jump until original jump is finished*/
+/*Event listener to use the jump function on pressing a key and to stop user pressing jump 
+until original jump is finished*/
 
 document.addEventListener('keypress', () => {
     if (!ninja.classList.contains('jump-ninja')) {
         jump();
     }
-})
+});
+
+/* set interval game loop to remove sumo wrester at end of game screen and determine collision
+recognition between sumo wrester and ninja*/
+
+setInterval(() => {
+    const ninjaTop = parseInt(window.getComputedStyle(ninja)
+    .getPropertyValue('top'));
+    const sumoLeft = parseInt(window.getComputedStyle(sumo)
+    .getPropertyValue('left'));
+
+    if (sumoLeft < 0) {
+    sumo.style.display = 'none';
+    } else {
+        sumo.style.display = '';
+    } 
+
+if (sumoLeft < 15 && sumoLeft > 0 && ninjaTop > 100 ) {
+    alert("GAME OVER");
+}
+
+}, 50);
