@@ -23,7 +23,7 @@ body {
     height: 400px;
     border: 2px solid black;
     margin: auto;
-    background-image: url("/assets/images/japan-background.jpeg", auto);
+    background-image: url("/assets/images/Japanbackground.jpeg", auto);
     background-size: cover;
   }
 
