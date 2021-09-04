@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", function(){
+  
+});
+
+
 /* select the ninja, sumo and score from the document by getting element by Id*/
 const ninja = document.getElementById("ninja");
 const sumo = document.getElementById("sumo");
@@ -39,8 +44,8 @@ setInterval(() => {
     sumo.style.display = "";
   }
 
-  //if (sumoLeft < 35 && sumoLeft > 0 && ninjaTop > 100) {
-   // alert("GAME OVER");
-   // location.reload();
+  if (sumoLeft < 35 && sumoLeft > 0 && ninjaTop > 100) {
+    alert("GAME OVER");
+    location.reload();
   }
-//}, 50);
+}, 50);
