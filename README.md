@@ -46,6 +46,22 @@
 
 ------------------------------------------
 
+ # Bugs 
+
+ ## When I deployed my project to github pages the images did not load. After chatting with student care I found that my file paths in the css were incorrect, see below:
+
+ * background-image: url("assets/images/Japanbackground.jpeg");
+ * background-image: url("assets/images/ninjacard.png");
+ * background-image: url("assets/images/sumo.png");  
+
+ ## They were changed to the ones below and all then worked correctly.
+
+ * background-image: url("../images/Japanbackground.jpeg");
+ * background-image: url("../images/ninjacard.png");
+ * background-image: url("../images/sumo.png");   
+
+----------------------------------
+
 ## Deployment
 
 This Website was depolyed on Github pages.
