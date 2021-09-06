@@ -19,8 +19,8 @@
 ------
 ## Future Features
 * Improve responsiveness, so can be used on a mobile.
-* Include a start button so the game doesnt just start straight away.
-* Improve the sensitivity of the two characters to make the game chrisper.
+* Include a start button so the game doesn't just start straight away.
+* Improve the sensitivity of the two characters to make the game crisper.
 * Add difficulty levels and score stats.
 
 -----
@@ -80,7 +80,7 @@ This was my first time using Javascript to try and build something. I found it p
 
 * [Code Institute](https://codeinstitute.net/) - For great walk through projects and lessons.
 * [w3schools](https://www.w3schools.com/) - A great webpage for someone beginning their journey with code.
-* [stackoverflow](https://stackoverflow.com/ - Another very useful site)
+* [stackoverflow](https://stackoverflow.com/) - Another very useful site
 
 
 
