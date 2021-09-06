@@ -16,6 +16,15 @@
 
 <img src="assets/images/game-over-alert.png">
 
+------
+## Future Features
+* Improve responsiveness, so can be used on a mobile.
+* Include a start button so the game doesnt just start straight away.
+* Improve the sensitivity of the two characters to make the game chrisper.
+* Add difficulty levels and score stats.
+
+-----
+
 -------------------------------------------
 # Testing
 
@@ -31,11 +40,9 @@
 
 <img src="assets/images/jshint test.png">
 
-## Lighthouse in Chrome developer tools was used to test the page. This was done for mobile and desktop. Below are the results.
+## Lighthouse in Chrome developer tools was used to test the page. This was done for desktops. The game does not work on a moble as of yet. Below is the result.
 
 <img src="assets/images/desktop.png">
-
-<img src="assets/images/mobile.png">
 
 ------------------------------------------
 
@@ -47,8 +54,36 @@ This Website was depolyed on Github pages.
 
 2. Scroll down and click on the new dedicated tag line for Github pages.
 
-3. From the source drop down menu select the master branch and click save.
+3. From the source drop down menu select the main branch and click save.
 
 4. The page will automatically refresh and indicate whether there has been a successful deployment.
 
-The live link to the webpage can be found here - 
+The live link to the webpage can be found here - [Ninja Jump](https://j-r77-stack.github.io/ninja-jump-game/)
+
+------
+------
+## Credits
+--------
+### Media
+* The images for the project were taken from [clipartmax](https://www.clipartmax.com/)
+
+* The font is from [google fonts](https://fonts.google.com/)
+
+### Background Image and colors
+
+* The background image was taken from [mocah](https://mocah.org/)
+
+* The background color was built from [rgbacolorpicker] (https://rgbacolorpicker.com/hex-color-picker)
+
+## Acknowledgements
+This was my first time using Javascript to try and build something. I found it pretty challenging but also enjoyable.  I'd like to thank:
+
+* [Code Institute](https://codeinstitute.net/) - For great walk through projects and lessons.
+* [w3schools](https://www.w3schools.com/) - A great webpage for someone beginning their journey with code.
+* [stackoverflow](https://stackoverflow.com/ - Another very useful site)
+
+
+
+
+
+------
