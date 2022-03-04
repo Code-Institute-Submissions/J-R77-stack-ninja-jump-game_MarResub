@@ -1,8 +1,5 @@
 /*jshint esversion: 6 */
 
-document.addEventListener("DOMContentLoaded", function(){
-  
-});
 
 /* select the ninja, sumo and score from the document by getting element by Id*/
 const ninja = document.getElementById("ninja");
