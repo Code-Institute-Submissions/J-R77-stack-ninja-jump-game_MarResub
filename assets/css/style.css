@@ -46,6 +46,34 @@ body {
     top: 80px;
   }
 }
+
+#game-container #sumo {
+  height: 70px;
+  width: 70px;
+  position: relative;
+  top: 180px;
+  left: 780px;
+}
+
+#game-container #sumo img {
+  height: 120px;
+  width: 110px;
+  
+}
+
+.sumoActive {
+  animation: animateSumo 1s linear infinite;
+}
+
+  @keyframes animateSumo {
+    0%
+    {
+      left: 90%;
+    }
+    100% {
+      left: 20px;
+    }
+  }  
  
   /*------Media Queries*/
 
