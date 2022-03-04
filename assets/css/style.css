@@ -75,7 +75,25 @@ body {
     }
   }  
  
-  /*------Media Queries*/
+  /*------Score and game info*/
+
+  #score {
+    height: auto;
+    width: auto;
+    position: relative;
+    bottom: 220px;
+    left: 700px;
+    font-size: 4rem;
+    color: #7c2f37;
+  }
+
+  #gameOver {
+    font-size: 5rem;
+    display: none;
+    position: absolute;
+    left: calc(50% - 181px);
+    top: calc(50% - 40px);
+  }
 
 
   
