@@ -24,10 +24,28 @@ body {
 
   }
   
-  
-
   /*-----Game Characters and Animations*/
+#game-container #ninja {
+  height: 70px;
+  width: 70px;
+  position: relative;
+  top: 240px;
+  left: 20px;
+}
 
+.ninjaActive {
+  animation: animateNinja 0.5s linear infinite;
+}
+
+@keyframes animateNinja {
+  0%, 100%
+  {
+    bottom: 240px;
+  }
+  45%, 55% {
+    top: 80px;
+  }
+}
  
   /*------Media Queries*/
 
