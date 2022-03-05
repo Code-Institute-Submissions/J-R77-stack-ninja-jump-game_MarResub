@@ -14,7 +14,7 @@ body {
    
    /*------Game layout*/
 
-  #game-container {
+  #gameContainer {
     width: 900px;
     height: 400px;
     border: 2px solid black;
@@ -25,7 +25,7 @@ body {
   }
   
   /*-----Game Characters and Animations*/
-#game-container #ninja {
+#gameContainer #ninja {
   height: 70px;
   width: 70px;
   position: relative;
@@ -47,25 +47,25 @@ body {
   }
 }
 
-#game-container #sumo {
+#gameContainer #sumo {
   height: 70px;
   width: 70px;
   position: relative;
-  top: 180px;
+  top: 200px;
   left: 780px;
 }
 
-#game-container #sumo img {
-  height: 120px;
-  width: 110px;
+#gameContainer #sumo img {
+  height: 100px;
+  width: 90px;
   
 }
 
 .sumoActive {
-  animation: animateSumo 1s linear infinite;
+  animation: sumoAninamte 1s linear infinite;
 }
 
-  @keyframes animateSumo {
+  @keyframes sumoAninamte {
     0%
     {
       left: 90%;

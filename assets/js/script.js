@@ -1,24 +1,52 @@
-/*jshint esversion: 6 */
+
 
 /* select the ninja, sumo, score, game-container and gameOver from the 
 document by getting element by query selector*/
-const game-container = document.querySelector("#game-container");
-const ninja = document.querySelector("#ninja");
-const sumo = document.querySelector("#sumo");
-const score = document.querySelector("#score");
-const gameOver = document.querySelector("#gameOver");
+let gameContainer = document.querySelector("#gameContainer");
+let ninja = document.querySelector("#ninja");
+let sumo = document.querySelector("#sumo");
+let score = document.querySelector("#score");
+let gameOver = document.querySelector("#gameOver");
 
 /* declaring the variable for score */
-const interval = null;
-const playerScore = 0;
+let interval = null;
+let playerScore = 0;
 
 /* Function to control the score */
 
-const scoreChecker = () => {
+let scoreCounter = () => {
     playerScore++;
-    score.innerText = 'Score <b>${playerScore}</b>';
+    score.innerHTML = `Score <b>${playerScore}</b>`;
 }
 
+/* Function to handle starting Game */ 
+window.addEventListener("keydown" , (start) => {
+    // console.log(start);
+    if (start.code == "Space") {
+        gameOver.style.display = "none";
+        sumo.classList.add("sumoActive");
+
+        /* Score */ 
+        let playerScore = 0;
+        interval = setInterval(scoreCounter, 200);
+    }
+});
+
+/* Function for making ninja jump */ 
+window.addEventListener("keydown" , (e) => {
+    // console.log(e);
+    if (e.key == "ArrowUp")
+         if(ninja.classList != "ninjaActive")
+             {
+                 ninja.classList.add("ninjaActive");
+                 /* Remove class after 0.5 seconds */ 
+                 setTimeout(() => {
+                     ninja.classList.remove("ninjaActive");
+                 } ,500);
+             }
+});
+
+/* Function for game over if Ninja hits sumo wrestler */
 
 
 
