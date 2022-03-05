@@ -48,26 +48,23 @@ window.addEventListener("keydown" , (e) => {
 
 /* Function for game over if Ninja hits sumo */
 let result = setInterval(() => {
-    let ninjaBottom = getComputedStyle(ninja).getPropertyValue("bottom");
-    console.log("ninjaBottom" + ninjaBottom);
+    let ninjaBottom = parseInt(getComputedStyle(ninja).getPropertyValue("bottom"));
+    // console.log("ninjaBottom" + ninjaBottom);
 
-    let sumoLeft = getComputedStyle(sumo).getPropertyValue("left");
-    console.log("SumoLeft" + sumoLeft);
-    
+    let sumoLeft = parseInt(getComputedStyle(sumo).getPropertyValue("left"));
+    // console.log("SumoLeft" + sumoLeft);
+
+    if (ninjaBottom <= 90 && sumoLeft >= 20 && sumoLeft <= 160) {
+        // console.log("Game Over");
+
+        
+        gameOver.style.display = "block";
+        sumo.classList.remove("sumoActive");
+        clearInterval(interval);
+        playerScore = 0;
+    }
+
 }, 10);
 
-
-
-/*Function to define what happens when the ninja jumps adding jump-animation to fuction from css*/
-
-
-
-/*Event listener to use the jump function on pressing a key and to stop user pressing jump 
-until original jump is finished*/
-
-
-
-/* set interval game loop to remove sumo wrester at end of game screen and determine collision
-recognition between sumo wrester and ninja*/
 
 
