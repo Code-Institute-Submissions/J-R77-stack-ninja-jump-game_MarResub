@@ -6,25 +6,24 @@
 }
 
 body {
-    background: radial-gradient(#96595f, #e4d4d5);
-    display: grid;
-    place-items: center;
-    height: 100vh;
-  }
-   
-   /*------Game layout*/
+  background: radial-gradient(#96595f, #e4d4d5);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
 
-  #gameContainer {
-    width: 900px;
-    height: 400px;
-    border: 2px solid black;
-    margin: auto;
-    background-image: url("../images/japan.png");
-    background-size: cover;
+/*------Game layout*/
 
-  }
-  
-  /*-----Game Characters and Animations*/
+#gameContainer {
+  width: 900px;
+  height: 400px;
+  border: 2px solid black;
+  margin: auto;
+  background-image: url("../images/japan.png");
+  background-size: cover;
+}
+
+/*-----Game Characters and Animations*/
 #gameContainer #ninja {
   height: 70px;
   width: 70px;
@@ -43,11 +42,12 @@ body {
 }
 
 @keyframes animateNinja {
-  0%, 100%
-  {
+  0%,
+  100% {
     bottom: 240px;
   }
-  45%, 55% {
+  45%,
+  55% {
     top: 80px;
   }
 }
@@ -56,49 +56,45 @@ body {
   height: 70px;
   width: 70px;
   position: relative;
-  top: 200px;
+  top: 225px;
   left: 780px;
 }
 
 #gameContainer #sumo img {
-  height: 70x;
+  height: 70px;
   width: 70px;
-  
 }
 
 .sumoActive {
   animation: sumoAninamte 1s linear infinite;
 }
 
-  @keyframes sumoAninamte {
-    0%
-    {
-      left: 90%;
-    }
-    100% {
-      left: 10px;
-    }
-  }  
- 
-  /*------Score and game info*/
-
-  #score {
-    height: auto;
-    width: auto;
-    position: relative;
-    bottom: 220px;
-    left: 700px;
-    font-size: 4rem;
-    color: #7c2f37;
+@keyframes sumoAninamte {
+  0% {
+    left: 90%;
   }
-
-  #gameOver {
-    font-size: 5rem;
-    display: none;
-    position: absolute;
-    left: calc(50% - 181px);
-    top: calc(50% - 40px);
+  100% {
+    left: 10px;
   }
+}
 
+/*------Score and game info*/
 
-  
+#score {
+  height: auto;
+  width: auto;
+  position: relative;
+  bottom: 220px;
+  left: 700px;
+  font-size: 4rem;
+  color: #7c2f37;
+}
+
+#gameOver {
+  font-size: 5rem;
+  display: none;
+  position: absolute;
+  left: calc(50% - 181px);
+  top: calc(50% - 40px);
+}
+

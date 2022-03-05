@@ -2,7 +2,6 @@
 
 /* select the ninja, sumo, score, game-container and gameOver from the 
 document by getting element by query selector*/
-let gameContainer = document.querySelector("#gameContainer");
 let ninja = document.querySelector("#ninja");
 let sumo = document.querySelector("#sumo");
 let score = document.querySelector("#score");
@@ -47,7 +46,7 @@ window.addEventListener("keydown" , (e) => {
 });
 
 /* Function for game over if Ninja hits sumo */
-let result = setInterval(() => {
+    setInterval(() => {
     let ninjaBottom = parseInt(getComputedStyle(ninja).getPropertyValue("bottom"));
     // console.log("ninjaBottom" + ninjaBottom);
 
