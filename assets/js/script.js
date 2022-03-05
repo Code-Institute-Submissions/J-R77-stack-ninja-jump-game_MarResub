@@ -47,6 +47,14 @@ window.addEventListener("keydown" , (e) => {
 });
 
 /* Function for game over if Ninja hits sumo */
+let result = setInterval(() => {
+    let ninjaBottom = getComputedStyle(ninja).getPropertyValue("bottom");
+    console.log("ninjaBottom" + ninjaBottom);
+
+    let sumoLeft = getComputedStyle(sumo).getPropertyValue("left");
+    console.log("SumoLeft" + sumoLeft);
+    
+}, 10);
 
 
 
