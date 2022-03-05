@@ -46,7 +46,7 @@ window.addEventListener("keydown" , (e) => {
              }
 });
 
-/* Function for game over if Ninja hits sumo wrestler */
+/* Function for game over if Ninja hits sumo */
 
 
 
