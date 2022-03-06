@@ -98,3 +98,72 @@ body {
   top: calc(50% - 40px);
 }
 
+ /*------Media Queries*/
+
+ @media (max-width: 950px) {
+   #gameContainer {
+    width: 75%;
+  }
+}
+
+@media (max-width: 950px) {
+  #score {
+   left: 350px;
+ }
+}
+
+@media (max-width: 700px) {
+  #score {
+   left: 150px;
+ }
+}
+
+@media (max-width: 450px) {
+  #score {
+   left: 50px;
+ }
+}
+
+@media (max-width: 560px) {
+  h1 {
+   width: 50%;
+ }
+}
+
+@media (max-width: 950px) {
+  #gameContainer #sumo {
+    left: 580px;
+ }
+}
+
+@media (max-width: 880px) {
+  #gameContainer #sumo {
+    left: 500px;
+ }
+}
+
+@media (max-width: 780px) {
+  #gameContainer #sumo {
+    left: 420px;
+ }
+}
+
+@media (max-width: 680px) {
+  #gameContainer #sumo {
+    left: 320px;
+ }
+}
+
+@media (max-width: 580px) {
+  #gameContainer #sumo {
+    left: 280px;
+ }
+}
+
+@media (max-width: 540px) {
+  #gameContainer #sumo {
+    left: 240px;
+ }
+}
+
+

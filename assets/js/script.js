@@ -48,14 +48,10 @@ window.addEventListener("keydown" , (e) => {
 /* Function for game over if Ninja hits sumo */
     setInterval(() => {
     let ninjaBottom = parseInt(getComputedStyle(ninja).getPropertyValue("bottom"));
-    // console.log("ninjaBottom" + ninjaBottom);
 
     let sumoLeft = parseInt(getComputedStyle(sumo).getPropertyValue("left"));
-    // console.log("SumoLeft" + sumoLeft);
-
+    
     if (ninjaBottom <= 90 && sumoLeft >= 20 && sumoLeft <= 160) {
-        // console.log("Game Over");
-
         
         gameOver.style.display = "block";
         sumo.classList.remove("sumoActive");
